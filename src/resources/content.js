@@ -30,17 +30,17 @@ const social = [
   {
     name: "GitHub",
     icon: "github",
-    link: "https://github.com/once-ui-system/nextjs-starter",
+    link: "https://github.com/serlox-hub",
+  },
+  {
+    name: "GitLab",
+    icon: "gitlab",
+    link: "https://gitlab.com/serlox",
   },
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
-  },
-  {
-    name: "Threads",
-    icon: "threads",
-    link: "https://www.threads.com/@once_ui",
+    link: "https://www.linkedin.com/in/sergiolopezolmo/",
   },
   {
     name: "Email",
@@ -82,7 +82,7 @@ const about = {
     display: true,
   },
   calendar: {
-    display: true,
+    display: false,
     link: "https://cal.com",
   },
   intro: {
@@ -90,9 +90,13 @@ const about = {
     title: "Introduction",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+          I'm Sergio, a full stack engineer with nearly a decade of experience building scalable, clean, 
+          and long-lasting software solutions. I don’t just code — I design systems, optimize processes, 
+          and remove friction at every stage of the development lifecycle.
+          <br /><br />
+          I’ve led technical squads and understand what it takes to guide a team, set priorities, and make 
+          decisions. Still, my favorite place to make an impact is in the code — creating, improving, and 
+          building with intention.
       </>
     ),
   },
