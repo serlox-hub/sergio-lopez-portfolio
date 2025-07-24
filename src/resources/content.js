@@ -101,45 +101,62 @@ const about = {
     ),
   },
   work: {
-    display: true, // set to false to hide this section
+    display: true,
     title: "Work Experience",
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        company: "Devo",
+        timeframe: "2018 - Present",
+        role: "Senior Lead Software Engineer",
         achievements: [
           <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
+            2018 - 2022: Hired as a React developer with no prior experience, I quickly ramped up and became 
+            an active contributor to both the technical and functional design of new features.<br />
+            Worked on refactoring legacy code to improve maintainability and performance — including major 
+            transitions such as migrating views from JSP to React.<br />
+            Gained experience in automated testing and progressively adopted best practices in front-end 
+            architecture and component design.
           </>,
           <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
+            2022 - 2024: As the team grew and I proved my value over time, I was promoted to Squad Lead after 
+            four years.<br />
+            I led a cross-functional team of 10 people, including frontend and backend developers, QA engineers, 
+            and designers.<br />
+            My responsibilities included managing priorities, facilitating agile ceremonies (daily stand-ups, 
+            sprint planning, retrospectives), and aligning technical execution with business goals.<br />
+            I also conducted performance evaluations, supported career development, and created a culture of 
+            accountability, collaboration, and continuous improvement.
           </>,
+          <>
+            2024 - 2025: After a company-wide downsizing led to the merging of teams, I took the opportunity to 
+            return to what I loved most: a hands-on technical role as an individual contributor.<br />
+            I remained actively involved across all areas of development, provided ongoing mentorship, and focused 
+            on driving cross-team efficiency and engineering excellence.<br /><br />
+
+            One of my most impactful initiatives was leading a greenfield GitLab CI pipelines project, which 
+            significantly improved delivery speed and consistency.<br />
+            I built a robust automation framework that included versioning, changelog generation, reusable 
+            build/test/publish templates for various project types, and automated deployments to preview, 
+            staging, and production environments with integrated testing and vulnerability reporting.<br />
+            This initiative enabled teams across the company to adopt standardized, reliable, and scalable CI/CD 
+            practices.
+          </>
         ],
-        images: [
-          // optional: leave the array empty if you don't want to display images
-          {
-            src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
-            width: 16,
-            height: 9,
-          },
-        ],
+        images: [],
       },
       {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
+        company: "SISnet 360",
+        timeframe: "2016 - 2018",
+        role: "Full Stack Developer",
         achievements: [
           <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
-          </>,
-          <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
+            As my first job, I developed part of the architecture of SISnet, a web application for the insurance 
+            and financial sectors.
+            Key responsibilities included back-end development and maintenance, API implementation, and research 
+            of emerging technologies.
+            <br /><br />
+            Technologies used:
+            Java, JSP (back-end); HTML, CSS, jQuery (front-end); Oracle, SQL Server, DB2 (database layer).
           </>,
         ],
         images: [],
@@ -151,50 +168,37 @@ const about = {
     title: "Studies",
     institutions: [
       {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
+        name: "I.E.S. El cañaveral",
+        description: <>2016 - Higher Technician in Web Application Development</>,
       },
       {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
+        name: "CFTIC Getafe",
+        description: <>2015 - Android develop course</>,
       },
     ],
   },
   technical: {
     display: true, // set to false to hide this section
-    title: "Technical skills",
+    title: "Skills",
     skills: [
       {
-        title: "Figma",
-        description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-02.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-          {
-            src: "/images/projects/project-01/cover-03.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
+        title: "Main Technical Skills",
+        description: <>
+          - JavaScript & React (front-end development)<br />
+          - Java with Spring Framework (back-end development)<br />
+          - MySQL (database design and optimization)<br />
+          - GitLab CI (CI/CD pipeline design and automation)</>,
+        images: [],
       },
       {
-        title: "Next.js",
-        description: <>Building next gen apps with Next.js + Once UI + Supabase.</>,
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-04.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
+        title: "Soft Skills",
+        description: <>
+          - Technical mentorship<br />
+          - Team leadership<br />
+          - Cross-team collaboration<br />
+          - Agile ceremonies facilitation<br />
+          - Performance reviews & career growth support</>,
+        images: [],
       },
     ],
   },
