@@ -9,10 +9,8 @@ import {
   Media,
   Tag,
   Text,
-  Meta,
-  Schema
 } from "@once-ui-system/core";
-import { baseURL, about, person, social } from "@/resources";
+import { about, person, social } from "@/resources";
 import TableOfContents from "@/components/about/TableOfContents";
 import styles from "@/components/about/about.module.scss";
 import React from "react";
@@ -42,18 +40,6 @@ export default function About() {
   ];
   return (
     <Column maxWidth="m">
-      <Schema
-        as="webPage"
-        baseURL={baseURL}
-        title={about.title}
-        description={about.description}
-        path={about.path}
-        author={{
-          name: person.name,
-          url: `${baseURL}${about.path}`,
-          image: `${baseURL}${person.avatar}`,
-        }}
-      />
       {about.tableOfContent.display && (
         <Column
           left="0"
