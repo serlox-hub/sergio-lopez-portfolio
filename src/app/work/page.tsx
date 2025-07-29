@@ -1,4 +1,4 @@
-import { Column, Meta, Schema } from "@once-ui-system/core";
+import { Column } from "@once-ui-system/core";
 import { Projects } from "@/components/work/Projects";
 
 export default function Work() {
