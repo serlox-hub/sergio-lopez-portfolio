@@ -1,13 +1,9 @@
-# **Magic Portfolio by Once UI**
-
-View the [demo here](https://demo.magic-portfolio.com).
-
-![Magic Portfolio](https://demo.magic-portfolio.com/images/og/home.jpg)
+# **Sergio López Portfolio**
 
 
 # **Getting started**
 
-Magic Portfolio was built with [Once UI](https://once-ui.com) for [Next.js](https://nextjs.org). It requires Node.js v18.17+.
+The project was built with [Once UI](https://once-ui.com) for [Next.js](https://nextjs.org). It requires Node.js v18.17+.
 
 **1. Clone the repository**
 ```
@@ -34,11 +30,6 @@ src/app/resources/config
 src/app/resources/content
 ```
 
-**6. Create blog posts / projects**
-```
-Add a new .mdx file to src/app/blog/posts or src/app/work/projects
-```
-
 # **Documentation**
 
 Docs available at: [docs.once-ui.com](https://docs.once-ui.com/docs/magic-portfolio/quick-start)
@@ -59,7 +50,7 @@ Docs available at: [docs.once-ui.com](https://docs.once-ui.com/docs/magic-portfo
 
 ## **Content**
 - Render sections conditionally based on the content file
-- Enable or disable pages for blog, work, gallery and about / CV
+- Enable or disable pages for work, gallery and about / CV
 - Generate and display social links automatically
 - Set up password protection for URLs
 
@@ -90,5 +81,3 @@ Distributed under the CC BY-NC 4.0 License.
 
 See `LICENSE.txt` for more information.
 
-# **Deploy with Vercel**
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fonce-ui-system%2Fmagic-portfolio&project-name=portfolio&repository-name=portfolio&redirect-url=https%3A%2F%2Fgithub.com%2Fonce-ui-system%2Fmagic-portfolio&demo-title=Magic%20Portfolio&demo-description=Showcase%20your%20designers%20or%20developer%20portfolio&demo-url=https%3A%2F%2Fdemo.magic-portfolio.com&demo-image=%2F%2Fraw.githubusercontent.com%2Fonce-ui-system%2Fmagic-portfolio%2Fmain%2Fpublic%2Fimages%2Fog%2Fhome.jpg)
