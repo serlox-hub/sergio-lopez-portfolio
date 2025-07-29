@@ -1,0 +1,44 @@
+---
+title: "GitLab CI Pipeline Templates"
+priority: 3
+publishedAt: "2023-02-13"
+summary: "GitLab CI Pipeline Templates is an internal project I developed at Devo to provide scalable, reusable CI/CD pipelines for Gradle and NPM projects. It automated versioning, changelogs, Helm deployments, and vulnerability tracking with minimal configuration per repo."
+images:
+  - "/images/projects/pipelines.webp"
+team:
+  - avatar: "/images/avatar.jpg"
+---
+
+## GitLab CI Pipeline Templates
+
+This internal project provides **extendable and reusable GitLab CI/CD pipeline templates** for all Gradle and NPM projects within the company. Designed to reduce duplication and manual setup, these templates allow entire teams to enable complete build and deployment pipelines with just a few lines of configuration.
+
+### Key Features
+
+- **Automatic Versioning**: Semantic versioning based on Conventional Commits.
+- **Changelog Generation**: Produces conflict-free changelogs, even with multiple open merge requests.
+- **Tagging & Releases**: Automates Git tags and GitLab Releases with every versioned deployment.
+- **Helm Integration**: Generates and deploys Helm charts directly to staging environments.
+- **Vulnerability Reporting**: Detects resolved vulnerabilities and includes them in the changelog.
+- **Complete Lifecycle Pipelines**:
+  - Build, test, and publish jobs
+  - Preview environment testing and deployment
+  - Multi-environment deployment support
+
+### Developer Usage
+
+Projects only needed a minimal configuration to activate full pipeline capabilities:
+
+```yaml
+include:
+  - project: "engineering/core-services/backstage/ci-cd/templates-gitlab-cicd"
+    ref: "5.+"
+    file: "pipelines/pipeline-complete.yml"
+
+variables:
+  WC_DEVELOPMENT_RELEASE_NOTES_FILE_PATH: "devReleaseNotes.md"
+  WC_CHANGELOG_FILE_PATH: "doc/CHANGELOG.md"
+  WC_VERSION_FILE_PATH: "gradle.properties"
+  WC_VERSION_KEY: "version"
+  WC_DEPLOY_PROJECT_ID: 1234
+  TEST_PLAN_KEY: "WT-1423"
