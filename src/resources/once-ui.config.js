@@ -1,7 +1,7 @@
 import { home } from "./content";
 
 // IMPORTANT: Replace with your own domain address - it's used for SEO in meta tags and schema
-const baseURL = "https://demo.magic-portfolio.com";
+const baseURL = "http://localhost:3000/";
 
 const routes = {
   "/": true,
@@ -11,8 +11,6 @@ const routes = {
 };
 
 const display = {
-  location: false,
-  time: true,
   themeSwitcher: true
 };
 
