@@ -56,7 +56,8 @@ const contact = {
   path: "/contact",
   label: "Contact",
   title: "Get in Touch",
-  description: "Feel free to connect with me through any of the platforms below",
+  description: "I'm always open to new ideas, collaborations. Feel free to explore my social profiles and reach out!",
+  footer: "You can find me on the following platforms:"
 };
 
 const about = {

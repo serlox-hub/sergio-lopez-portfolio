@@ -3,35 +3,53 @@ import {
   Flex,
   Heading,
   Text,
-  IconButton,
+  Button,
 } from "@once-ui-system/core";
-import { baseURL, person, social, contact } from "@/resources";
+import { contact, social } from "@/resources";
 
 export default function Contact() {
   return (
     <Column as="section" maxWidth="m" horizontal="center" gap="l">
-      <Column maxWidth="xs" gap="16">
-        <Heading variant="display-strong-s">{contact.title}</Heading>
-        <Text variant="body-default-m" onBackground="neutral-weak">
+      <Column
+        style={{
+          padding: "4rem 2rem",
+          borderRadius: "0 0 2rem 2rem",
+          color: "white",
+          textAlign: "center",
+        }}
+        horizontal="center"
+        gap="16"
+      >
+        <Heading variant="display-strong-xl" style={{ color: "white" }}>
+          {contact.title}
+        </Heading>
+        <Text variant="body-default-l" style={{ color: "white", opacity: 0.9 }}>
           {contact.description}
         </Text>
+      </Column>
 
-        <Text variant="body-default-m" marginTop="m">
-          You can find me on the following platforms:
+      <Column maxWidth="xs" gap="24" paddingTop="xl" horizontal="center">
+        <Text variant="body-default-m" onBackground="neutral-weak" style={{ textAlign: "center" }}>
+          {contact.footer}
         </Text>
-        <Flex gap="m" wrap>
-          {social.map((item) => (
-            item.link && (
-              <IconButton
-                key={item.name}
-                href={item.link}
-                icon={item.icon}
-                variant="secondary"
-                size="l"
-                aria-label={item.name}
-              />
-            )
-          ))}
+        <Flex gap="m" wrap horizontal="center">
+          {social.map(
+            (item) =>
+              item.link && (
+                <Button
+                  key={item.name}
+                  href={item.link}
+                  prefixIcon={item.icon}
+                  size="m"
+                  data-border="rounded"
+                  style={{
+                    transition: "transform 0.2s",
+                  }}
+                >
+                  {item.name}
+                </Button>
+              )
+          )}
         </Flex>
       </Column>
     </Column>
