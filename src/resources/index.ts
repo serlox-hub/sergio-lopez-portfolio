@@ -8,4 +8,4 @@ export {
   gallery,
 } from "./content";
 
-export { display, routes, protectedRoutes, baseURL, fonts, style, schema, sameAs, effects, dataStyle } from "./once-ui.config";
+export { display, routes, baseURL, fonts, style, schema, sameAs, effects, dataStyle } from "./once-ui.config";

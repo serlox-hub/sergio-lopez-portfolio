@@ -137,4 +137,4 @@ const sameAs = {
   discord: "https://discord.com/invite/5EyAQ4eNdS",
 };
 
-export { display, routes, protectedRoutes, baseURL, fonts, style, schema, sameAs, effects, dataStyle };
+export { display, routes, baseURL, fonts, style, schema, sameAs, effects, dataStyle };
