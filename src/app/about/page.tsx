@@ -40,18 +40,6 @@ export default function About() {
   ];
   return (
     <Column maxWidth="m">
-      {about.tableOfContent.display && (
-        <Column
-          left="0"
-          style={{ top: "50%", transform: "translateY(-50%)" }}
-          position="fixed"
-          paddingLeft="24"
-          gap="32"
-          hide="s"
-        >
-          <TableOfContents structure={structure} about={about} />
-        </Column>
-      )}
       <Flex fillWidth mobileDirection="column" horizontal="center">
         {about.avatar.display && (
           <Column
@@ -65,18 +53,24 @@ export default function About() {
             horizontal="center"
           >
             <Avatar src={withBasePath(person.avatar)} size="xl" unoptimized/>
-            <Flex gap="8" vertical="center">
-              <Icon onBackground="accent-weak" name="globe" />
-              {person.location}
-            </Flex>
-            {person.languages.length > 0 && (
-              <Flex wrap gap="8">
-                {person.languages.map((language, index) => (
-                  <Tag key={language} size="l">
-                    {language}
-                  </Tag>
-                ))}
+            <Column horizontal="start" gap="8">
+              <Flex gap="8" vertical="center">
+                <Icon name="location" onBackground="accent-weak" />
+                <Text variant="body-default-m">{person.location}</Text>
               </Flex>
+              {person.languages.length > 0 && (
+                <Flex gap="8" vertical="center">
+                  <Icon name="globe" onBackground="accent-weak" />
+                  <Text variant="body-default-m">{person.languages.join("/")}</Text>
+                </Flex>
+              )}
+            </Column>
+
+            <Flex height="1" marginTop="xs" width="160" background="neutral-strong" hide="m"></Flex>
+            {about.tableOfContent.display && (
+              <Column paddingTop="l" hide="m">
+                <TableOfContents structure={structure} about={about} />
+              </Column>
             )}
           </Column>
         )}

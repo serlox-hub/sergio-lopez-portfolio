@@ -1,5 +1,7 @@
 import { IconType } from "react-icons";
 
+import { HiLocationMarker } from "react-icons/hi";
+
 import {
   HiArrowUpRight,
   HiOutlineLink,
@@ -10,7 +12,6 @@ import {
   HiOutlineEye,
   HiOutlineEyeSlash,
   HiOutlineDocument,
-  HiOutlineGlobeAsiaAustralia,
   HiOutlineRocketLaunch,
 } from "react-icons/hi2";
 
@@ -19,7 +20,7 @@ import {
   PiUserCircleDuotone,
   PiGridFourDuotone,
   PiBookBookmarkDuotone,
-  PiImageDuotone,
+  PiGlobe,
 } from "react-icons/pi";
 
 import { FaDiscord, FaGithub, FaLinkedin, FaX, FaThreads, FaGitlab } from "react-icons/fa6";
@@ -28,7 +29,7 @@ export const iconLibrary: Record<string, IconType> = {
   arrowUpRight: HiArrowUpRight,
   arrowRight: HiArrowRight,
   email: HiEnvelope,
-  globe: HiOutlineGlobeAsiaAustralia,
+  globe: PiGlobe,
   person: PiUserCircleDuotone,
   grid: PiGridFourDuotone,
   book: PiBookBookmarkDuotone,
@@ -41,6 +42,7 @@ export const iconLibrary: Record<string, IconType> = {
   github: FaGithub,
   gitlab: FaGitlab,
   linkedin: FaLinkedin,
+  location: HiLocationMarker,
   x: FaX,
   threads: FaThreads,
   arrowUpRightFromSquare: HiArrowTopRightOnSquare,

@@ -36,16 +36,8 @@ const TableOfContents: React.FC<TableOfContentsProps> = ({ structure, about }) =
 
   return (
     <Column
-      left="0"
-      style={{
-        top: "50%",
-        transform: "translateY(-50%)",
-        whiteSpace: "nowrap",
-      }}
-      position="fixed"
-      paddingLeft="24"
       gap="32"
-      hide="m"
+      style={{ whiteSpace: "nowrap" }}
     >
       {structure
         .filter((section) => section.display)
@@ -58,7 +50,7 @@ const TableOfContents: React.FC<TableOfContentsProps> = ({ structure, about }) =
               vertical="center"
               onClick={() => scrollTo(section.title, 80)}
             >
-              <Flex height="1" minWidth="16" background="neutral-strong"></Flex>
+              <Flex height="1" minWidth="12" background="neutral-strong"></Flex>
               <Text>{section.title}</Text>
             </Flex>
             {about.tableOfContent.subItems && (
