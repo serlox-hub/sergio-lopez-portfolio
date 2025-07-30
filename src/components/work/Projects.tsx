@@ -1,4 +1,4 @@
-import { getPosts } from "@/utils/utils";
+import { getPosts, withBasePath } from "@/utils/utils";
 import { Column } from "@once-ui-system/core";
 import { ProjectCard } from "@/components";
 
@@ -22,7 +22,7 @@ export function Projects({ range }: ProjectsProps) {
           priority={index < 2}
           key={post.slug}
           href={`work/${post.slug}`}
-          images={post.metadata.images}
+          images={post.metadata.images.map((image) => withBasePath(image))}
           title={post.metadata.title}
           description={post.metadata.summary}
           content={post.content}
