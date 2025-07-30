@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
 import { getPosts } from "@/utils/utils";
-import { AvatarGroup, Button, Column, Flex, Heading, Media, Text } from "@once-ui-system/core";
+import { Button, Column, Flex, Heading, Media, Text } from "@once-ui-system/core";
 import { formatDate } from "@/utils/formatDate";
 import { ScrollToHash, CustomMDX } from "@/components";
 
@@ -38,6 +38,7 @@ export default async function Project({
       </Column>
       {post.metadata.images.length > 0 && (
         <Media
+          unoptimized
           priority
           aspectRatio="16 / 9"
           radius="m"
@@ -47,7 +48,6 @@ export default async function Project({
       )}
       <Column style={{ margin: "auto" }} as="article" maxWidth="xs">
         <Flex gap="12" marginBottom="24" vertical="center">
-          {post.metadata.team && <AvatarGroup reverse avatars={avatars} size="m" />}
           <Text variant="body-default-s" onBackground="neutral-weak">
             {post.metadata.publishedAt && formatDate(post.metadata.publishedAt)}
           </Text>

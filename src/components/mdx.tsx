@@ -60,6 +60,7 @@ function createImage({ alt, src, ...props }: MediaProps & { src: string }) {
 
   return (
     <Media
+      unoptimized
       marginTop="8"
       marginBottom="16"
       enlarge

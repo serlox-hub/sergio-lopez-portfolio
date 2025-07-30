@@ -1,5 +1,4 @@
 import {
-  Avatar,
   Button,
   Column,
   Flex,
@@ -10,6 +9,7 @@ import {
   Tag,
   Text,
 } from "@once-ui-system/core";
+import { Avatar } from "@/components/Avatar";
 import { about, person, social } from "@/resources";
 import TableOfContents from "@/components/about/TableOfContents";
 import styles from "@/components/about/about.module.scss";
@@ -64,7 +64,7 @@ export default function About() {
             flex={3}
             horizontal="center"
           >
-            <Avatar src={person.avatar} size="xl" />
+            <Avatar src={person.avatar} size="xl" unoptimized/>
             <Flex gap="8" vertical="center">
               <Icon onBackground="accent-weak" name="globe" />
               {person.location}
@@ -203,6 +203,7 @@ export default function About() {
                             height={image.height}
                           >
                             <Media
+                              unoptimized
                               enlarge
                               radius="m"
                               //@ts-ignore
@@ -272,6 +273,7 @@ export default function About() {
                             height={image.height}
                           >
                             <Media
+                              unoptimized
                               enlarge
                               radius="m"
                               //@ts-ignore
