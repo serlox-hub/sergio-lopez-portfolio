@@ -75,7 +75,7 @@ jobs:
           export EXPORT_STATIC=true
           ${{ steps.detect-package-manager.outputs.runner }} next build
         env:
-          NODE_ENV: production
+          NEXT_PUBLIC_BASE_PATH: /sergio-lopez-portfolio
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
