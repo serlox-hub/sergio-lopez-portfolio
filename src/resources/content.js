@@ -93,7 +93,7 @@ const about = {
       {
         company: "Devo",
         timeframe: "2018 - Present",
-        role: "Senior Lead Software Engineer",
+        role: "Senior Software Engineer",
         achievements: [
           <>
             2018 - 2022: Hired as a React developer with no prior experience, I
