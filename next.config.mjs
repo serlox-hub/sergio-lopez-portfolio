@@ -18,6 +18,9 @@ const nextConfig = {
     compiler: "modern",
     silenceDeprecations: ["legacy-js-api"],
   },
+  images: {
+    unoptimized: true, // 👈 necesario para GitHub Pages
+  },
 };
 
 export default withMDX(nextConfig);
