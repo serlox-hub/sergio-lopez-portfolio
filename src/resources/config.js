@@ -1,7 +1,5 @@
-import { home } from "./content";
-
 // IMPORTANT: Replace with your own domain address - it's used for SEO in meta tags and schema
-const baseURL = "http://localhost:3000/";
+const baseURL = "https://serlox-hub.github.io/sergio-lopez-portfolio/";
 
 const routes = {
   "/": true,
@@ -119,20 +117,5 @@ const effects = {
 };
 
 
-// default schema data
-const schema = {
-  logo: "",
-  type: "Organization",
-  name: "Once UI",
-  description: home.description,
-  email: "lorant@once-ui.com",
-};
 
-// social links
-const sameAs = {
-  threads: "https://www.threads.com/@once_ui",
-  linkedin: "https://www.linkedin.com/company/once-ui/",
-  discord: "https://discord.com/invite/5EyAQ4eNdS",
-};
-
-export { display, routes, baseURL, fonts, style, schema, sameAs, effects, dataStyle };
+export { display, routes, baseURL, fonts, style, effects, dataStyle };

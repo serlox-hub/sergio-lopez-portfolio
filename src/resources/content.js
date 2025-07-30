@@ -38,20 +38,8 @@ const social = [
 
 const home = {
   path: "/",
-  label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Sergio López Portfolio</>,
-  featured: {
-    display: true,
-    title: (
-      <>
-        Recent project: <strong className="ml-4">Once UI</strong>
-      </>
-    ),
-    href: "/work/building-once-ui-a-customizable-design-system",
-  },
-  subline: <></>,
 };
 
 const contact = {
@@ -180,7 +168,7 @@ const about = {
     ],
   },
   studies: {
-    display: true, // set to false to hide this section
+    display: true,
     title: "Studies",
     institutions: [
       {
@@ -196,7 +184,7 @@ const about = {
     ],
   },
   technical: {
-    display: true, // set to false to hide this section
+    display: true,
     title: "Skills",
     skills: [
       {
@@ -237,7 +225,7 @@ const work = {
   title: `Projects – ${person.name}`,
   description: `Design and dev projects by ${person.name}`,
   // Create new project pages by adding a new .mdx file to app/work/projects
-  // All projects will be listed on the /home and /work routes
+  // All projects will be listed on the /work routes
 };
 
 export { person, social, home, about, work, contact };
