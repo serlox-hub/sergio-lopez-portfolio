@@ -72,3 +72,12 @@ export function getPosts(customPath = ["", "", "", ""]) {
   const postsDir = path.join(process.cwd(), ...customPath);
   return getMDXData(postsDir);
 }
+
+export function withBasePath(path: string) {
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+  if (!basePath) {
+    return `${path}`;
+  }
+  return `${basePath}/${path}`;
+}
+

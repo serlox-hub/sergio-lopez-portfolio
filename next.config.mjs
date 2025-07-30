@@ -5,14 +5,13 @@ const withMDX = mdx({
   options: {},
 });
 
-const isStaticExport = process.env.EXPORT_STATIC === "true";
-const repo = "sergio-lopez-portfolio";
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  ...(isStaticExport ? { output: "export" } : {}),
-  basePath: isStaticExport ? `/${repo}` : "",
-  assetPrefix: isStaticExport ? `/${repo}/` : "",
+  output: basePath ? "export" : undefined,
+  basePath,
+  assetPrefix: basePath || "",
   pageExtensions: ["ts", "tsx", "md", "mdx"],
   transpilePackages: ["next-mdx-remote"],
   sassOptions: {
@@ -23,5 +22,6 @@ const nextConfig = {
     unoptimized: true, // 👈 necesario para GitHub Pages
   },
 };
+
 
 export default withMDX(nextConfig);

@@ -210,7 +210,6 @@ const about = {
             <br />- GitLab CI (CI/CD pipeline design and automation)
           </>
         ),
-        images: [],
       },
       {
         title: "Soft Skills",
@@ -226,7 +225,6 @@ const about = {
             <br />- Performance reviews & career growth support
           </>
         ),
-        images: [],
       },
     ],
   },

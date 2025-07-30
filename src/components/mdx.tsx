@@ -22,6 +22,7 @@ import {
   Media,
   SmartLink,
 } from "@once-ui-system/core";
+import { withBasePath } from "@/utils/utils";
 
 type CustomLinkProps = React.AnchorHTMLAttributes<HTMLAnchorElement> & {
   href: string;
@@ -69,7 +70,7 @@ function createImage({ alt, src, ...props }: MediaProps & { src: string }) {
       border="neutral-alpha-medium"
       sizes="(max-width: 960px) 100vw, 960px"
       alt={alt}
-      src={src}
+      src={withBasePath(src)}
       {...props}
     />
   );
