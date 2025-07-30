@@ -78,6 +78,6 @@ export function withBasePath(path: string) {
   if (!basePath) {
     return `${path}`;
   }
-  return `${basePath}/${path}`;
+  return `${basePath}/${path}`.replace(/\/{2,}/g, "/");
 }
 
