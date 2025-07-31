@@ -98,32 +98,6 @@ const about = {
         role: "Senior Software Engineer",
         achievements: [
           <>
-            2018 - 2022: Hired as a React developer with no prior experience, I
-            quickly ramped up and became an active contributor to both the
-            technical and functional design of new features.
-            <br />
-            Worked on refactoring legacy code to improve maintainability and
-            performance — including major transitions such as migrating views
-            from JSP to React.
-            <br />
-            Gained experience in automated testing and progressively adopted
-            best practices in front-end architecture and component design.
-          </>,
-          <>
-            2022 - 2024: As the team grew and I proved my value over time, I was
-            promoted to Squad Lead after four years.
-            <br />
-            I led a cross-functional team of 10 people, including frontend and
-            backend developers, QA engineers, and designers.
-            <br />
-            My responsibilities included managing priorities, facilitating agile
-            ceremonies (daily stand-ups, sprint planning, retrospectives), and
-            aligning technical execution with business goals.
-            <br />I also conducted performance evaluations, supported career
-            development, and created a culture of accountability, collaboration,
-            and continuous improvement.
-          </>,
-          <>
             2024 - 2025: After a company-wide downsizing led to the merging of
             teams, I took the opportunity to return to what I loved most: a
             hands-on technical role as an individual contributor.
@@ -145,6 +119,32 @@ const about = {
             <br />
             This initiative enabled teams across the company to adopt
             standardized, reliable, and scalable CI/CD practices.
+          </>,
+          <>
+            2022 - 2024: As the team grew and I proved my value over time, I was
+            promoted to Squad Lead after four years.
+            <br />
+            I led a cross-functional team of 10 people, including frontend and
+            backend developers, QA engineers, and designers.
+            <br />
+            My responsibilities included managing priorities, facilitating agile
+            ceremonies (daily stand-ups, sprint planning, retrospectives), and
+            aligning technical execution with business goals.
+            <br />I also conducted performance evaluations, supported career
+            development, and created a culture of accountability, collaboration,
+            and continuous improvement.
+          </>,
+          <>
+            2018 - 2022: Hired as a React developer with no prior experience, I
+            quickly ramped up and became an active contributor to both the
+            technical and functional design of new features.
+            <br />
+            Worked on refactoring legacy code to improve maintainability and
+            performance — including major transitions such as migrating views
+            from JSP to React.
+            <br />
+            Gained experience in automated testing and progressively adopted
+            best practices in front-end architecture and component design.
           </>,
         ],
         images: [],
