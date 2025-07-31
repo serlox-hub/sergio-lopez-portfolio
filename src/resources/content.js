@@ -249,7 +249,7 @@ const reviews = {
     title: "Did we work together?",
     description:
       "If you have collaborated with me in the past, I would love to hear your feedback! Your insights are invaluable and help me grow as a professional.",
-    link: "https://www.linkedin.com/in/sergiolopezolmo",
+    link: "https://www.linkedin.com/in/sergiolopezolmo/details/recommendations/",
     buttonText: "Write a LinkedIn review",
     footer:
       "*By leaving a review, you agree that it may be displayed on this site. If you prefer to keep it private, please let me know.",
