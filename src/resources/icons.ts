@@ -21,13 +21,19 @@ import {
   PiGridFourDuotone,
   PiBookBookmarkDuotone,
   PiGlobe,
+  PiStar
 } from "react-icons/pi";
+
+import { MdOutlineWorkOutline, MdOutlineEmail  } from "react-icons/md";
+import { IoLanguage } from "react-icons/io5";
+
 
 import { FaDiscord, FaGithub, FaLinkedin, FaX, FaThreads, FaGitlab } from "react-icons/fa6";
 
 export const iconLibrary: Record<string, IconType> = {
   arrowUpRight: HiArrowUpRight,
   arrowRight: HiArrowRight,
+  case: MdOutlineWorkOutline,
   email: HiEnvelope,
   globe: PiGlobe,
   person: PiUserCircleDuotone,
@@ -42,7 +48,10 @@ export const iconLibrary: Record<string, IconType> = {
   github: FaGithub,
   gitlab: FaGitlab,
   linkedin: FaLinkedin,
+  language: IoLanguage,
   location: HiLocationMarker,
+  mail: MdOutlineEmail,
+  star: PiStar,
   x: FaX,
   threads: FaThreads,
   arrowUpRightFromSquare: HiArrowTopRightOnSquare,

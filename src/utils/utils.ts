@@ -13,6 +13,7 @@ type Metadata = {
   title: string;
   priority: number;
   publishedAt: string;
+  relationship: string;
   summary: string;
   image?: string;
   images: string[];
@@ -44,6 +45,7 @@ function readMDXFile(filePath: string) {
     priority: data.priority || 0,
     publishedAt: data.publishedAt,
     summary: data.summary || "",
+    relationship: data.relationship || "",
     image: data.image || "",
     images: data.images || [],
     tag: data.tag || [],
@@ -51,7 +53,7 @@ function readMDXFile(filePath: string) {
     link: data.link || "",
   };
 
-  return { metadata, content };
+  return {  metadata, content };
 }
 
 function getMDXData(dir: string) {

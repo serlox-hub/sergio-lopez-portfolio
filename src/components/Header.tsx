@@ -5,42 +5,16 @@ import { useEffect, useState } from "react";
 
 import { Fade, Flex, Line, ToggleButton } from "@once-ui-system/core";
 
-import { routes, display, person, about, work, contact } from "@/resources";
+import {
+  routes,
+  display,
+  about,
+  work,
+  contact,
+  reviews,
+} from "@/resources";
 import { ThemeToggle } from "./ThemeToggle";
 import styles from "./Header.module.scss";
-
-type TimeDisplayProps = {
-  timeZone: string;
-  locale?: string;
-};
-
-const TimeDisplay: React.FC<TimeDisplayProps> = ({ timeZone, locale = "en-GB" }) => {
-  const [currentTime, setCurrentTime] = useState("");
-
-  useEffect(() => {
-    const updateTime = () => {
-      const now = new Date();
-      const options: Intl.DateTimeFormatOptions = {
-        timeZone,
-        hour: "2-digit",
-        minute: "2-digit",
-        second: "2-digit",
-        hour12: false,
-      };
-      const timeString = new Intl.DateTimeFormat(locale, options).format(now);
-      setCurrentTime(timeString);
-    };
-
-    updateTime();
-    const intervalId = setInterval(updateTime, 1000);
-
-    return () => clearInterval(intervalId);
-  }, [timeZone, locale]);
-
-  return <>{currentTime}</>;
-};
-
-export default TimeDisplay;
 
 export const Header = () => {
   const pathname = usePathname() ?? "";
@@ -48,7 +22,15 @@ export const Header = () => {
   return (
     <>
       <Fade hide="s" fillWidth position="fixed" height="80" zIndex={9} />
-      <Fade show="s" fillWidth position="fixed" bottom="0" to="top" height="80" zIndex={9} />
+      <Fade
+        show="s"
+        fillWidth
+        position="fixed"
+        bottom="0"
+        to="top"
+        height="80"
+        zIndex={9}
+      />
       <Flex
         fitHeight
         position="unset"
@@ -70,7 +52,12 @@ export const Header = () => {
             horizontal="center"
             zIndex={1}
           >
-            <Flex gap="4" vertical="center" textVariant="body-default-s" suppressHydrationWarning>
+            <Flex
+              gap="4"
+              vertical="center"
+              textVariant="body-default-s"
+              suppressHydrationWarning
+            >
               {routes["/about"] && (
                 <>
                   <ToggleButton
@@ -92,16 +79,33 @@ export const Header = () => {
                 <>
                   <ToggleButton
                     className="s-flex-hide"
-                    prefixIcon="grid"
+                    prefixIcon="case"
                     href="/work"
                     label={work.label}
                     selected={pathname.startsWith("/work")}
                   />
                   <ToggleButton
                     className="s-flex-show"
-                    prefixIcon="grid"
+                    prefixIcon="case"
                     href="/work"
                     selected={pathname.startsWith("/work")}
+                  />
+                </>
+              )}
+              {routes["/reviews"] && (
+                <>
+                  <ToggleButton
+                    className="s-flex-hide"
+                    prefixIcon="star"
+                    href="/reviews"
+                    label={reviews.label}
+                    selected={pathname.startsWith("/reviews")}
+                  />
+                  <ToggleButton
+                    className="s-flex-show"
+                    prefixIcon="star"
+                    href="/reviews"
+                    selected={pathname.startsWith("/reviews")}
                   />
                 </>
               )}
@@ -109,14 +113,14 @@ export const Header = () => {
                 <>
                   <ToggleButton
                     className="s-flex-hide"
-                    prefixIcon="email"
+                    prefixIcon="mail"
                     href="/contact"
                     label={contact.label}
                     selected={pathname.startsWith("/contact")}
                   />
                   <ToggleButton
                     className="s-flex-show"
-                    prefixIcon="email"
+                    prefixIcon="mail"
                     href="/contact"
                     selected={pathname.startsWith("/contact")}
                   />

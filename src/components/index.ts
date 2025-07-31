@@ -1,6 +1,9 @@
 export { Header } from "@/components/Header";
 export { Footer } from "@/components/Footer";
-export { ProjectCard } from "@/components/ProjectCard";
+export { ProjectCard } from "@/components/work/ProjectCard";
+export { ReviewCard } from "@/components/reviews/ReviewCard";
+export { ReviewRequest } from "@/components/reviews/ReviewRequest";
+export { Reviews } from "@/components/reviews/Reviews";
 export { HeadingLink } from "@/components/HeadingLink";
 export { RouteGuard } from "@/components/RouteGuard";
 export { Providers } from "@/components/Providers";

@@ -73,15 +73,16 @@ const about = {
     title: "Introduction",
     description: (
       <>
-        I&apos;m Sergio, a full stack engineer with nearly a decade of experience
-        building scalable, clean, and long-lasting software solutions. I don&apos;t
-        just code — I design systems, optimize processes, and remove friction at
-        every stage of the development lifecycle.
+        I&apos;m Sergio, a full stack engineer with nearly a decade of
+        experience building scalable, clean, and long-lasting software
+        solutions. I don&apos;t just code — I design systems, optimize
+        processes, and remove friction at every stage of the development
+        lifecycle.
         <br />
         <br />
-        I&apos;ve led technical squads and understand what it takes to guide a team,
-        set priorities, and make decisions. Still, my favorite place to make an
-        impact is in the code — creating, improving, and building with
+        I&apos;ve led technical squads and understand what it takes to guide a
+        team, set priorities, and make decisions. Still, my favorite place to
+        make an impact is in the code — creating, improving, and building with
         intention.
       </>
     ),
@@ -228,4 +229,63 @@ const work = {
   // All projects will be listed on the /work routes
 };
 
-export { person, social, home, about, work, contact };
+const reviews = {
+  path: "/reviews",
+  label: "Reviews",
+  title: "Reviews",
+  description: `People who worked with ${person.name}`,
+  request: {
+    title: "Did we work together?",
+    description:
+      "If you have collaborated with me in the past, I would love to hear your feedback! Your insights are invaluable and help me grow as a professional.",
+    link: "https://www.linkedin.com/in/sergiolopezolmo",
+    buttonText: "Write a LinkedIn review",
+    footer: "*Al dejar una recomendación en LinkedIn, aceptas que pueda ser mostrada públicamente en este portfolio."
+  },
+  bgTokens: {
+    effects: {
+      mask: {
+        cursor: true,
+        x: 50,
+        y: 0,
+        radius: 100,
+      },
+      gradient: {
+        display: true,
+        opacity: 90,
+        x: 50,
+        y: 0,
+        width: 50,
+        height: 50,
+        tilt: 0,
+        colorStart: "accent-background-strong",
+        colorEnd: "static-transparent",
+      },
+      dots: {
+        display: true,
+        opacity: 20,
+        size: "2",
+        color: "brand-on-background-weak",
+      },
+      grid: {
+        display: false,
+        opacity: 100,
+        color: "neutral-alpha-medium",
+        width: "0.25rem",
+        height: "0.25rem",
+      },
+      lines: {
+        display: false,
+        opacity: 100,
+        color: "neutral-alpha-medium",
+        size: "16",
+        thickness: 1,
+        angle: 90,
+      },
+    },
+  },
+  // Create new project pages by adding a new .mdx file to app/reviews/reviews
+  // All projects will be listed on the /reviews routes
+};
+
+export { person, social, home, about, work, contact, reviews };

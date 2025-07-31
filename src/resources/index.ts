@@ -5,7 +5,8 @@ export {
   home,
   about,
   work,
-  contact
+  contact,
+  reviews
 } from "./content";
 
 export { display, routes, baseURL, fonts, style, effects, dataStyle } from "./config";
