@@ -187,6 +187,7 @@ const about = {
   technical: {
     display: true,
     title: "Skills",
+    description: "Not finding a specific skill or technology listed? That's never been a blocker. I thrive on learning quickly, adapting to new contexts, and picking up whatever tools the job demands — because great engineering is about mindset, not just checklists.",
     skillTags: ["JavaScript", "React", "Java", "Spring", "MySQL", "GitLab CI"],
     softSkillTags: ["Agile", "Mentorship", "Collaboration", "Leadership"],
     skills: [

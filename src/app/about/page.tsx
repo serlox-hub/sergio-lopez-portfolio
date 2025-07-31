@@ -186,7 +186,7 @@ export default function About() {
               >
                 {about.work.title}
               </Heading>
-              <Column fillWidth gap="l" marginBottom="40">
+              <Column fillWidth gap="l" marginBottom="56">
                 {about.work.experiences.map((experience, index) => (
                   <Column
                     key={`${experience.company}-${experience.role}-${index}`}
@@ -243,7 +243,7 @@ export default function About() {
               >
                 {about.studies.title}
               </Heading>
-              <Column fillWidth gap="l" marginBottom="40">
+              <Column fillWidth gap="l" marginBottom="56">
                 {about.studies.institutions.map((institution, index) => (
                   <Column
                     key={`${institution.name}-${index}`}
@@ -270,10 +270,19 @@ export default function About() {
                 as="h2"
                 id={about.technical.title}
                 variant="display-strong-s"
-                marginBottom="40"
+                marginBottom="m"
               >
                 {about.technical.title}
               </Heading>
+              {about.technical.description && (
+                <Text
+                  variant="body-default-m"
+                  marginBottom="l"
+                  onBackground="neutral-weak"
+                >
+                  {about.technical.description}
+                </Text>
+              )}
               <Column fillWidth gap="l">
                 {about.technical.skills.map((skill, index) => (
                   <Column key={`${skill}-${index}`} fillWidth gap="4">
