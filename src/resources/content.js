@@ -95,7 +95,7 @@ const about = {
       {
         company: "Devo",
         timeframe: "2018 - Present",
-        role: "Senior Software Engineer",
+        role: "Tech lead/Squad Lead/Senior Engineer",
         achievements: [
           <>
             2024 - 2025: After a company-wide downsizing led to the merging of
