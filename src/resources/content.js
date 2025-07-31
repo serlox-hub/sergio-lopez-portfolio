@@ -8,7 +8,10 @@ const person = {
   avatar: "/images/avatar.jpg",
   email: "sergiolopezolmo@gmail.com",
   location: "Europe/Madrid",
-  languages: [{name: "Spanish", level: "Native"}, {name: "English", level: "B2"}],
+  languages: [
+    { name: "Spanish", level: "Native" },
+    { name: "English", level: "B2" },
+  ],
 };
 
 const social = [
@@ -59,7 +62,7 @@ const about = {
   description: `Meet ${person.name}, ${person.role} from ${person.location}`,
   displaySocial: false,
   tableOfContent: {
-    display: true,
+    display: false,
     subItems: false,
   },
   avatar: {
@@ -184,6 +187,8 @@ const about = {
   technical: {
     display: true,
     title: "Skills",
+    skillTags: ["JavaScript", "React", "Java", "Spring", "MySQL", "GitLab CI"],
+    softSkillTags: ["Agile", "Mentorship", "Collaboration", "Leadership"],
     skills: [
       {
         title: "Main Technical Skills",
@@ -206,10 +211,9 @@ const about = {
             <br />
             - Team leadership
             <br />
-            - Cross-team collaboration
+            - Team builder & cross-team collaboration
             <br />
-            - Agile ceremonies facilitation
-            <br />- Performance reviews & career growth support
+            - Performance reviews & career growth support
           </>
         ),
       },

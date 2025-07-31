@@ -63,10 +63,7 @@ export default function About() {
                 <Icon name="language" onBackground="accent-weak" />
                 <Column gap="4">
                   {person.languages.map((language) => (
-                    <Text
-                      key={language.name}
-                      variant="body-default-m"
-                    >
+                    <Text key={language.name} variant="body-default-m">
                       {language.name} - {language.level}
                     </Text>
                   ))}
@@ -80,8 +77,30 @@ export default function About() {
             marginTop="xs"
             width="160"
             background="neutral-strong"
-            hide="m"
+            hide="s"
           ></Flex>
+          {(about.technical.skillTags.length > 0 ||
+            about.technical.softSkillTags.length > 0) && (
+            <Flex
+              className={styles.blockAlign}
+              gap="8"
+              wrap
+              data-border="rounded"
+              maxWidth="160"
+              hide="s"
+            >
+              {about.technical.skillTags.map((tag) => (
+                <Tag key={tag} variant="neutral">
+                  {tag}
+                </Tag>
+              ))}
+              {about.technical.softSkillTags.map((tag) => (
+                <Tag key={tag} variant="info">
+                  {tag}
+                </Tag>
+              ))}
+            </Flex>
+          )}
           {about.tableOfContent.display && (
             <Column paddingTop="l" hide="m">
               <TableOfContents structure={structure} about={about} />
@@ -214,7 +233,6 @@ export default function About() {
               </Column>
             </>
           )}
-
           {about.studies.display && (
             <>
               <Heading
@@ -246,7 +264,6 @@ export default function About() {
               </Column>
             </>
           )}
-
           {about.technical.display && (
             <>
               <Heading
