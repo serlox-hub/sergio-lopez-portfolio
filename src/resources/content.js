@@ -173,14 +173,23 @@ const about = {
     title: "Studies",
     institutions: [
       {
+        name: "GitLab University",
+        description: (
+          <>2024 - Higher Technician in Web Application Development</>
+        ),
+        logo: "/images/about/gitlab.jpg",
+      },
+      {
         name: "I.E.S. El cañaveral",
         description: (
           <>2016 - Higher Technician in Web Application Development</>
         ),
+        logo: "/images/about/canaveral.jpg",
       },
       {
         name: "CFTIC Getafe",
         description: <>2015 - Android develop course</>,
+        logo: "/images/about/cftic.png",
       },
     ],
   },
