@@ -8,7 +8,7 @@ const person = {
   avatar: "/images/avatar.jpg",
   email: "sergiolopezolmo@gmail.com",
   location: "Europe/Madrid",
-  languages: ["Spanish", "English"],
+  languages: [{name: "Spanish", level: "Native"}, {name: "English", level: "B2"}],
 };
 
 const social = [

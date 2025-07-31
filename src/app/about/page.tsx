@@ -41,47 +41,53 @@ export default function About() {
   return (
     <Column maxWidth="m">
       <Flex fillWidth mobileDirection="column" horizontal="center">
-        {about.avatar.display && (
-          <Column
-            className={styles.avatar}
-            position="sticky"
-            minWidth="160"
-            paddingX="l"
-            paddingBottom="xl"
-            gap="m"
-            flex={3}
-            horizontal="center"
-          >
-            <Avatar src={withBasePath(person.avatar)} size="xl" unoptimized />
-            <Column horizontal="start" gap="8">
-              <Flex gap="8" vertical="center">
-                <Icon name="location" onBackground="accent-weak" />
-                <Text variant="body-default-m">{person.location}</Text>
-              </Flex>
-              {person.languages.length > 0 && (
-                <Flex gap="8" vertical="center">
-                  <Icon name="language" onBackground="accent-weak" />
-                  <Text variant="body-default-m">
-                    {person.languages.join("/")}
-                  </Text>
-                </Flex>
-              )}
-            </Column>
+        <Column
+          className={styles.avatar}
+          position="sticky"
+          minWidth="160"
+          paddingX="l"
+          paddingBottom="xl"
+          gap="m"
+          flex={3}
+          horizontal="center"
+        >
+          <Avatar src={withBasePath(person.avatar)} size="xl" unoptimized />
 
-            <Flex
-              height="1"
-              marginTop="xs"
-              width="160"
-              background="neutral-strong"
-              hide="m"
-            ></Flex>
-            {about.tableOfContent.display && (
-              <Column paddingTop="l" hide="m">
-                <TableOfContents structure={structure} about={about} />
-              </Column>
+          <Column horizontal="start" gap="24">
+            <Flex gap="8" vertical="center">
+              <Icon name="location" onBackground="accent-weak" />
+              <Text variant="body-default-m">{person.location}</Text>
+            </Flex>
+            {person.languages.length > 0 && (
+              <Flex gap="8" vertical="start">
+                <Icon name="language" onBackground="accent-weak" />
+                <Column gap="4">
+                  {person.languages.map((language) => (
+                    <Text
+                      key={language.name}
+                      variant="body-default-m"
+                    >
+                      {language.name} - {language.level}
+                    </Text>
+                  ))}
+                </Column>
+              </Flex>
             )}
           </Column>
-        )}
+
+          <Flex
+            height="1"
+            marginTop="xs"
+            width="160"
+            background="neutral-strong"
+            hide="m"
+          ></Flex>
+          {about.tableOfContent.display && (
+            <Column paddingTop="l" hide="m">
+              <TableOfContents structure={structure} about={about} />
+            </Column>
+          )}
+        </Column>
         <Column className={styles.blockAlign} flex={9} maxWidth={40}>
           <Column
             id={about.intro.title}
