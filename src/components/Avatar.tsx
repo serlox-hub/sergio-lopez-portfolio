@@ -40,7 +40,7 @@ const Avatar = forwardRef<HTMLDivElement, AvatarProps>(({
   loading,
   empty,
   statusIndicator,
-  unoptimized = false, // por defecto falso para no romper nada
+  unoptimized = false,
   className,
   style = {},
   ...rest
@@ -99,7 +99,7 @@ const Avatar = forwardRef<HTMLDivElement, AvatarProps>(({
           src={src}
           fill={true}
           alt="Avatar"
-          unoptimized={unoptimized} // <-- Aquí pasamos la prop!
+          unoptimized={unoptimized}
           sizes={typeof size === "string" ? `${sizeMapping[size]}px` : `${size * 16}px`}
           className={styles.image}
         />
