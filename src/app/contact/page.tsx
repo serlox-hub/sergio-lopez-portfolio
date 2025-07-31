@@ -1,10 +1,4 @@
-import {
-  Column,
-  Flex,
-  Heading,
-  Text,
-  Button,
-} from "@once-ui-system/core";
+import { Column, Flex, Heading, Text, Button } from "@once-ui-system/core";
 import { contact, social } from "@/resources";
 
 export default function Contact() {
@@ -14,22 +8,22 @@ export default function Contact() {
         style={{
           padding: "4rem 2rem",
           borderRadius: "0 0 2rem 2rem",
-          color: "white",
           textAlign: "center",
         }}
         horizontal="center"
         gap="16"
       >
-        <Heading variant="display-strong-xl" style={{ color: "white" }}>
-          {contact.title}
-        </Heading>
-        <Text variant="body-default-l" style={{ color: "white", opacity: 0.9 }}>
+        <Heading variant="display-strong-xl">{contact.title}</Heading>
+        <Text variant="body-default-l" style={{ opacity: 0.9 }}>
           {contact.description}
         </Text>
       </Column>
 
       <Column maxWidth="xs" gap="24" paddingTop="xl" horizontal="center">
-        <Text variant="body-default-m" onBackground="neutral-weak" style={{ textAlign: "center" }}>
+        <Text
+          variant="body-default-m"
+          style={{ textAlign: "center", opacity: 0.7 }}
+        >
           {contact.footer}
         </Text>
         <Flex gap="m" wrap horizontal="center">
