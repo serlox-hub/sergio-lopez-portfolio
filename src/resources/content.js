@@ -94,77 +94,107 @@ const about = {
       {
         company: "Devo",
         timeframe: "2018 - Present",
-        role: "Tech lead/Squad Lead/Senior Engineer",
+        logo: "/images/about/work/devo.png",
         achievements: [
-          <>
-            2024 - 2025: After a company-wide downsizing led to the merging of
-            teams, I took the opportunity to return to what I loved most: a
-            hands-on technical role as an individual contributor.
-            <br />
-            I remained actively involved across all areas of development,
-            provided ongoing mentorship, and focused on driving cross-team
-            efficiency and engineering excellence.
-            <br />
-            <br />
-            One of my most impactful initiatives was leading a greenfield GitLab
-            CI pipelines project, which significantly improved delivery speed
-            and consistency.
-            <br />
-            I built a robust automation framework that included versioning,
-            changelog generation, reusable build/test/publish templates for
-            various project types, and automated deployments to preview,
-            staging, and production environments with integrated testing and
-            vulnerability reporting.
-            <br />
-            This initiative enabled teams across the company to adopt
-            standardized, reliable, and scalable CI/CD practices.
-          </>,
-          <>
-            2022 - 2024: As the team grew and I proved my value over time, I was
-            promoted to Squad Lead after four years.
-            <br />
-            I led a cross-functional team of 10 people, including frontend and
-            backend developers, QA engineers, and designers.
-            <br />
-            My responsibilities included managing priorities, facilitating agile
-            ceremonies (daily stand-ups, sprint planning, retrospectives), and
-            aligning technical execution with business goals.
-            <br />I also conducted performance evaluations, supported career
-            development, and created a culture of accountability, collaboration,
-            and continuous improvement.
-          </>,
-          <>
-            2018 - 2022: Hired as a React developer with no prior experience, I
-            quickly ramped up and became an active contributor to both the
-            technical and functional design of new features.
-            <br />
-            Worked on refactoring legacy code to improve maintainability and
-            performance — including major transitions such as migrating views
-            from JSP to React.
-            <br />
-            Gained experience in automated testing and progressively adopted
-            best practices in front-end architecture and component design.
-          </>,
+          {
+            role: "Tech Lead",
+            timeframe: "2024 - 2025",
+            description: (
+              <>
+                After a company-wide downsizing led to the merging of teams, I
+                took the opportunity to return to what I loved most: a hands-on
+                technical role as an individual contributor.
+                <br />
+                <br />
+                I remained actively involved across all areas of development,
+                provided ongoing mentorship, and focused on driving cross-team
+                efficiency and engineering excellence.
+                <br />
+                <br />
+                One of my most impactful initiatives was leading a greenfield
+                GitLab CI pipelines project, which significantly improved
+                delivery speed and consistency. I built a robust automation
+                framework that included versioning, changelog generation,
+                reusable build/test/publish templates for various project types,
+                and automated deployments to preview, staging, and production
+                environments with integrated testing and vulnerability
+                reporting.
+                <br />
+                <br />
+                This initiative enabled teams across the company to adopt
+                standardized, reliable, and scalable CI/CD practices.
+              </>
+            ),
+          },
+          {
+            role: "Squad Lead",
+            timeframe: "2022 - 2024",
+            description: (
+              <>
+                As the team grew and I proved my value over time, I was promoted
+                to Squad Lead after four years.
+                <br />
+                <br />
+                I led a cross-functional team of 10 people, including frontend
+                and backend developers, QA engineers, and designers.
+                <br />
+                <br />
+                My responsibilities included managing priorities, facilitating
+                agile ceremonies (daily stand-ups, sprint planning,
+                retrospectives), and aligning technical execution with business
+                goals.
+                <br />
+                <br />I also conducted performance evaluations, supported career
+                development, and created a culture of accountability,
+                collaboration, and continuous improvement.
+              </>
+            ),
+          },
+          {
+            role: "Software Engineer",
+            timeframe: "2018 - 2022",
+            description: (
+              <>
+                Hired as a React developer with no prior experience, I quickly
+                ramped up and became an active contributor to both the technical
+                and functional design of new features.
+                <br />
+                <br />
+                Worked on refactoring legacy code to improve maintainability and
+                performance — including major transitions such as migrating
+                views from JSP to React.
+                <br />
+                <br />
+                Gained experience in automated testing and progressively adopted
+                best practices in front-end architecture and component design.
+              </>
+            ),
+          },
         ],
-        images: [],
       },
       {
         company: "SISnet 360",
         timeframe: "2016 - 2018",
         role: "Full Stack Developer",
+        logo: "/images/about/work/sisnet.png",
         achievements: [
-          <>
-            As my first job, I developed part of the architecture of SISnet, a
-            web application for the insurance and financial sectors. Key
-            responsibilities included back-end development and maintenance, API
-            implementation, and research of emerging technologies.
-            <br />
-            <br />
-            Technologies used: Java, JSP (back-end); HTML, CSS, jQuery
-            (front-end); Oracle, SQL Server, DB2 (database layer).
-          </>,
+          {
+            role: "Full Stack Developer",
+            timeframe: "2016 - 2018",
+            description: (
+              <>
+                As my first job, I developed part of the architecture of SISnet,
+                a web application for the insurance and financial sectors. Key
+                responsibilities included back-end development and maintenance,
+                API implementation, and research of emerging technologies.
+                <br />
+                <br />
+                Technologies used: Java, JSP (back-end); HTML, CSS, jQuery
+                (front-end); Oracle, SQL Server, DB2 (database layer).
+              </>
+            ),
+          },
         ],
-        images: [],
       },
     ],
   },
@@ -177,26 +207,27 @@ const about = {
         description: (
           <>2024 - Higher Technician in Web Application Development</>
         ),
-        logo: "/images/about/gitlab.jpg",
+        logo: "/images/about/studies/gitlab.jpg",
       },
       {
         name: "I.E.S. El cañaveral",
         description: (
           <>2016 - Higher Technician in Web Application Development</>
         ),
-        logo: "/images/about/canaveral.jpg",
+        logo: "/images/about/studies/canaveral.jpg",
       },
       {
         name: "CFTIC Getafe",
         description: <>2015 - Android develop course</>,
-        logo: "/images/about/cftic.png",
+        logo: "/images/about/studies/cftic.png",
       },
     ],
   },
   technical: {
     display: true,
     title: "Skills",
-    description: "Not finding a specific skill or technology listed? That's never been a blocker. I thrive on learning quickly, adapting to new contexts, and picking up whatever tools the job demands — because great engineering is about mindset, not just checklists.",
+    description:
+      "Not finding a specific skill or technology listed? That's never been a blocker. I thrive on learning quickly, adapting to new contexts, and picking up whatever tools the job demands — because great engineering is about mindset, not just checklists.",
     skillTags: ["JavaScript", "React", "Java", "Spring", "MySQL", "GitLab CI"],
     softSkillTags: ["Agile", "Mentorship", "Collaboration", "Leadership"],
     skills: [
@@ -222,8 +253,7 @@ const about = {
             - Team leadership
             <br />
             - Team builder & cross-team collaboration
-            <br />
-            - Performance reviews & career growth support
+            <br />- Performance reviews & career growth support
           </>
         ),
       },

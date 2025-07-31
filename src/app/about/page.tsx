@@ -167,7 +167,7 @@ export default function About() {
 
           {about.intro.display && (
             <Column
-              textVariant="body-default-l"
+              textVariant="body-default-m"
               fillWidth
               gap="m"
               marginBottom="xl"
@@ -194,39 +194,57 @@ export default function About() {
                   >
                     <Flex
                       fillWidth
-                      horizontal="space-between"
-                      vertical="end"
-                      marginBottom="4"
+                      vertical="center"
+                      gap="16"
+                      marginBottom="12"
                     >
-                      <Text id={experience.company} variant="heading-strong-l">
-                        {experience.company}
-                      </Text>
-                      <Text
-                        variant="heading-default-xs"
-                        onBackground="neutral-weak"
-                      >
-                        {experience.timeframe}
-                      </Text>
+                      <Avatar
+                        src={withBasePath(experience.logo)}
+                        size="m"
+                        unoptimized
+                      />
+                      <Column>
+                        <Text
+                          id={experience.company}
+                          variant="heading-strong-l"
+                        >
+                          {experience.company}
+                        </Text>
+                        <Text
+                          variant="heading-default-xs"
+                          onBackground="neutral-weak"
+                        >
+                          {experience.timeframe}
+                        </Text>
+                      </Column>
                     </Flex>
-                    <Text
-                      variant="body-default-s"
-                      onBackground="brand-weak"
-                      marginBottom="m"
-                    >
-                      {experience.role}
-                    </Text>
-                    <Column as="ul" gap="16">
-                      {experience.achievements.map(
-                        (achievement: JSX.Element, index: number) => (
+                    <Column gap="16">
+                      {experience.achievements.map((achievement) => (
+                        <Column key={`${achievement.role}`} fillWidth gap="4" marginBottom="s">
+                          <Column marginBottom="xs">
+                            <Text
+                              id={achievement.role}
+                              variant="body-default-m"
+                              onBackground="brand-weak"
+                            >
+                              {achievement.role}
+                            </Text>
+                            <Text
+                              variant="body-default-xs"
+                              onBackground="neutral-weak"
+                              style={{ flex: 1 }}
+                            >
+                              {achievement.timeframe}
+                            </Text>
+                          </Column>
                           <Text
-                            as="li"
                             variant="body-default-m"
-                            key={`${experience.company}-${index}`}
+                            onBackground="neutral-weak"
                           >
-                            {achievement}
+                            {achievement.description}
                           </Text>
-                        )
-                      )}
+                        </Column>
+                      ))}
                     </Column>
                   </Column>
                 ))}
