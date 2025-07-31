@@ -240,7 +240,8 @@ const reviews = {
       "If you have collaborated with me in the past, I would love to hear your feedback! Your insights are invaluable and help me grow as a professional.",
     link: "https://www.linkedin.com/in/sergiolopezolmo",
     buttonText: "Write a LinkedIn review",
-    footer: "*Al dejar una recomendación en LinkedIn, aceptas que pueda ser mostrada públicamente en este portfolio."
+    footer:
+      "*By leaving a review, you agree that it may be displayed on this site. If you prefer to keep it private, please let me know.",
   },
   bgTokens: {
     effects: {
