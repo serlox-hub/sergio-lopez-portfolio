@@ -40,6 +40,7 @@ const home = {
   path: "/",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
+  image: "/images/projects/portfolio.png",
 };
 
 const contact = {
