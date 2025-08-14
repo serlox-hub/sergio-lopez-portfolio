@@ -205,20 +205,20 @@ const about = {
       {
         name: "GitLab University",
         description: (
-          <>2024 - Higher Technician in Web Application Development</>
+          <>Nov 2024 - GitLab Certified CI/CD Associate</>
         ),
         logo: "/images/about/studies/gitlab.jpg",
       },
       {
-        name: "I.E.S. El cañaveral",
+        name: "El Cañaveral High School",
         description: (
-          <>2016 - Higher Technician in Web Application Development</>
+          <>Sep 2014 - Mar 2016 - Higher Technician in Web Application Development</>
         ),
         logo: "/images/about/studies/canaveral.jpg",
       },
       {
-        name: "CFTIC Getafe",
-        description: <>2015 - Android develop course</>,
+        name: "ICT Training Centre of Getafe",
+        description: <>Aug 2015 - Android develop course</>,
         logo: "/images/about/studies/cftic.png",
       },
     ],
