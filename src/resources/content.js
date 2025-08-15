@@ -102,27 +102,36 @@ const about = {
             description: (
               <>
                 After a company-wide downsizing led to the merging of teams, I
-                took the opportunity to return to what I loved most: a hands-on
+                took the opportunity to return to what I enjoy most: a hands-on
                 technical role as an individual contributor.
                 <br />
                 <br />
                 I remained actively involved across all areas of development,
-                provided ongoing mentorship, and focused on driving cross-team
-                efficiency and engineering excellence.
+                providing ongoing mentorship and driving cross-team efficiency
+                and engineering excellence.
                 <br />
                 <br />
                 One of my most impactful initiatives was leading a greenfield
-                GitLab CI pipelines project, which significantly improved
-                delivery speed and consistency. I built a robust automation
-                framework that included versioning, changelog generation,
-                reusable build/test/publish templates for various project types,
-                and automated deployments to preview, staging, and production
-                environments with integrated testing and vulnerability
-                reporting.
+                GitLab CI automation project. I built a robust CI/CD framework
+                that standardized delivery pipelines across 20+ projects. This
+                included automation for versioning, changelogs, reusable
+                build/test/publish templates, and multi-environment deployments
+                with integrated testing and security reporting. The initiative
+                cut release times by over 80% — from a full day to just a few
+                clicks — and enabled teams to adopt scalable, reliable, and
+                secure delivery practices.
                 <br />
                 <br />
-                This initiative enabled teams across the company to adopt
-                standardized, reliable, and scalable CI/CD practices.
+                I also led a modular migration of a large-scale legacy
+                application to a centralized JavaScript bundle, improving build
+                performance and maintainability across multiple applications.
+                <br />
+                <br />
+                In parallel, I modernized legacy front- and back-end layers by
+                migrating Struts actions to JAX-RS REST APIs and refactoring
+                JSP/jQuery components into modular React architecture. Frontend
+                artifacts were then deployed to the company&apos;s CDN for
+                optimized delivery and caching.
               </>
             ),
           },
@@ -131,22 +140,22 @@ const about = {
             timeframe: "2022 - 2024",
             description: (
               <>
-                As the team grew and I proved my value over time, I was promoted
-                to Squad Lead after four years.
+                Promoted to Squad Lead after four years, in recognition of
+                consistent technical impact and team contributions.
                 <br />
                 <br />
                 I led a cross-functional team of 10 people, including frontend
                 and backend developers, QA engineers, and designers.
                 <br />
                 <br />
-                My responsibilities included managing priorities, facilitating
-                agile ceremonies (daily stand-ups, sprint planning,
-                retrospectives), and aligning technical execution with business
-                goals.
+                My responsibilities included managing sprint priorities,
+                facilitating agile ceremonies (daily stand-ups, planning,
+                retrospectives), and aligning execution with product and
+                business goals.
                 <br />
-                <br />I also conducted performance evaluations, supported career
-                development, and created a culture of accountability,
-                collaboration, and continuous improvement.
+                <br />I also conducted performance reviews, supported career
+                development, and helped foster a culture of accountability,
+                collaboration, and continuous improvement within the squad.
               </>
             ),
           },
@@ -160,13 +169,14 @@ const about = {
                 and functional design of new features.
                 <br />
                 <br />
-                Worked on refactoring legacy code to improve maintainability and
-                performance — including major transitions such as migrating
-                views from JSP to React.
+                Worked on refactoring legacy frontend code to improve
+                maintainability and performance — including major transitions
+                such as migrating views from JSP to React.
                 <br />
                 <br />
-                Gained experience in automated testing and progressively adopted
-                best practices in front-end architecture and component design.
+                Gained hands-on experience with testing and progressively
+                adopted best practices in front-end architecture and component
+                design.
               </>
             ),
           },
@@ -183,14 +193,19 @@ const about = {
             timeframe: "2016 - 2018",
             description: (
               <>
-                As my first job, I developed part of the architecture of SISnet,
-                a web application for the insurance and financial sectors. Key
-                responsibilities included back-end development and maintenance,
-                API implementation, and research of emerging technologies.
+                As my first professional role, I contributed to the architecture
+                and back-end development of SISnet, a large-scale web
+                application used in the insurance and financial sectors.
                 <br />
                 <br />
-                Technologies used: Java, JSP (back-end); HTML, CSS, jQuery
-                (front-end); Oracle, SQL Server, DB2 (database layer).
+                My responsibilities included API implementation, platform
+                maintenance, and researching emerging technologies to support
+                technical decisions.
+                <br />
+                <br />
+                Worked across the full stack using Java and JSP for the backend,
+                HTML/CSS and jQuery for the frontend, and enterprise-grade
+                databases such as Oracle, SQL Server, and DB2.
               </>
             ),
           },
@@ -204,21 +219,22 @@ const about = {
     institutions: [
       {
         name: "GitLab University",
-        description: (
-          <>Nov 2024 - GitLab Certified CI/CD Associate</>
-        ),
+        description: <>Nov 2024 - GitLab Certified CI/CD Associate</>,
         logo: "/images/about/studies/gitlab.jpg",
       },
       {
         name: "El Cañaveral High School",
         description: (
-          <>Sep 2014 - Mar 2016 - Higher Technician in Web Application Development</>
+          <>
+            Sep 2014 - Mar 2016 - Higher Technician in Web Application
+            Development
+          </>
         ),
         logo: "/images/about/studies/canaveral.jpg",
       },
       {
         name: "ICT Training Centre of Getafe",
-        description: <>Aug 2015 - Android develop course</>,
+        description: <>Aug 2015 - Android app development</>,
         logo: "/images/about/studies/cftic.png",
       },
     ],
